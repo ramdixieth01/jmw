@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+
+	
+<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+<!--<script type="text/javascript" src="jquery/jquery.morelines.min.js"></script>-->
+<script type="text/javascript" src="jquery/jquery.morelines.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+	
+
+	
+<script>
+
+$(function() {
+
+	
+  $('.js-description_readmore').moreLines({linecount: 8 });});
+	$(function() {
+      $('.js-description_readmore').moreLines({
+        linecount: 1, 
+        baseclass: 'b-description',
+        basejsclass: 'js-description',
+        classspecific: '_readmore',    
+        buttontxtmore: "read more",               
+        buttontxtless: "read less",
+        animationspeed: 250 
+      });
+		});
+	
+ 
+</script>	
+</head>
+<body>
+<div class="container">
+	<div class="header">
+	  <div class="jmw">
+    <img src="images/jmw.png" width="50" height="70" alt=""/> </div>
+  <div class="drop">
+<ul>
+  <li><a  href="#home">HOME</a></li>
+ <li><a href="#about">ABOUT US</a></li>
+	<li><a href="#works">OUR WORKS</a></li>
+	<li><a href="#contact">CONTACT</a></li>	
+</ul>
+</div>
+</div>
+	<section id="home">
+	<div class="banner">
+		
+     <img src="images/ban.jpg" width="1368" height="600"  alt=""/> </div>
+	</section>	
+  <div class="innerbody">
+      <section id="about">
+	  <div class="about">
+		   
+          <div class="abouti">
+      <h2>ABOUT US</h2>
+     </div>
+		   <div class="aboutl">
+		   
+		   </div>
+     <div class="aboutt">
+		 <div class="b-description_readmore js-description_readmore" >
+ <div class="content">
+<p> <span class="b"> Jack Media Works</span>  is a  media  company , dedicated to informing and entertaining  different kind of viewers everyday our company <br/>leads the way in delivering unravelled assets and integrated solutions to customers, bringing your brand and messages to life,<br/>and creating contents loved by all.</p>
+<p>We hold a unique position in our market as the only media company offering advertising solutions to radio, telivision digital and <br/> live assets ,including the biggest news and entertainment brands in the world.At Jack Media Works we are committed <br/> to a customer-focused approach,with priorities to deliver creative,innovative,'can do' solutions based on customer <br/>needs and objectives.Our team is committed to create and deliver great content,experiences and results for our audiences.
+</p>
+</div>
+</div>
+ </div>
+ </div>
+   </section>
+    <section id="works">
+   <div class="works">
+		
+	   <div class="worksi">
+	      <h2>OUR WORKS</h2>
+	   </div>
+	    <div class="worksl">
+      </div>
+	   <div class="white">
+       <img src="images/white.jpg" width="600" height="230" alt=""/>
+	   </div>
+      <div class="wor">
+	  <button class="accordion">SHOWS</button>
+  <div class="panel">
+    <div class="case">
+        <div class="s1">
+          <img src="images/show.jpg" width="400" height="200"  alt=""/></div>
+         <div class="s2">
+			 <img src="images/show2.jpg" width="400" height="200"  alt=""/></div>
+			 <div class="s3">
+			 <img src="images/show3.jpg" width="400" height="200"  alt=""/></div> 
+          
+    </div>
+</div>
+
+<button class="accordion">CASE STUDIES</button>
+<div class="panel">
+ <div class="nshows">
+ <div class="c1">
+   <img src="images/case1.jpg" width="400" height="200"  alt=""/> </div>
+ </div>
+ <div class="c2">
+   <img src="images/case2.jpg" width="400" height="200"  alt=""/> </div>
+  <div class="c3">
+    <img src="images/case3.jpg" width="400" height="200"  alt=""/> </div> 
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+	  </div>
+   
+  </div>
+	</section>	
+  <section id="contact">
+	  <div class="contact">
+	
+  <div class="contacti">
+    <h2>CONTACT</h2>
+    </div>
+	   <div class="contactl">
+		   
+		   </div>
+    <div class="con">
+    <h3>Corporate Office</h3>
+    </div>
+    <div class="reg">
+    <h3>Registered Office</h3>
+    </div>
+	 <div class="conh">
+	  <h3>MINERVA CORPORATION</h3>
+	  </div> 
+	  <div class="regh">
+	  <h3>MINERVA INDUSTRIES</h3>
+	  </div>
+	  <div class="cond">
+	  <p>
+	 12,Gul Marg place,<br/>
+     New Delhi-110 066,INDIA
+	 </p>
+	  </div>
+	  <div class="regd">
+	  <p>
+	 45A,Jhujhum Place<br/>
+     Haryana-125 006,INDIA
+	 </p>
+	  </div>
+	  <div class="contactf">
+	<form action="action_page.php">
+		<h4>ENTER YOUR NAME</h4>
+<input name="name" type="text" id="name" placeholder="Enter Your Name" size="30">
+<h4 >ENTER YOUR PHONE NUMBER</h4>
+<input name="number" type="TEXT" id="number" placeholder="Enter Your Number" size="30">
+<h4 >COUNTRY</h4>
+<select id="country" name="country">
+	<option value="australia">Australia </option>
+	<option value="canada">Canada</option>
+	<option value="india">India</option>
+	<option value="usa">USA</option>
+</select>
+<h4>DESCRIPTION</h4>
+<textarea name="description" id="description" placeholder="Enter your Description Here..." style="height:200px"></textarea>	<br/>
+<input type="submit" value="Submit">
+</form>
+ </div>
+</div>
+</section>
+</div>
+ 
+<div class="footer">
+  </div>
+</div>
+	</body>
+</html>
